@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_title_height"
+    android:background="@color/title_background"
+     android:id="@+id/maintitle"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:id="@+id/tvTitleBar"
+       android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/ivMore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/spinner"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

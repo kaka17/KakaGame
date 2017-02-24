@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">智趣游戏厅</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="setting">设置</string>
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="tip_load_data_error">对不起,出错了</string>
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">以上是所有数据</string>
+    <string name="refresh_not_data">暂无需要更新的数据</string>
+    <!-- Download -->
+    <string name="check_file_exists">检测是否已下载..</string>
+    <string name="checked_new_version">检查到新版本：%s</string>
+    <string name="download_new_version">正在下载新版本</string>
+    <string name="tip_download_file">文件将被保存到sdcard, 路径: %s</string>
+    <string name="status_download_fail">下载失败</string>
+    <string name="status_download_success">下载完成</string>
+    <string name="download_file_size">文件大小：%s</string>
+    <string name="download_notification_desc_head">%s正在更新</string>
+
+    <string name="file_exists_confirm_content">之前已下载过该版本，请选择是否直接安装</string>
+    <string name="file_exists_confirm_install">直接安装</string>
+    <string name="file_exists_confirm_download">重新下载</string>
+    <string name="file_exists_confirm_cancel">取消</string>
+    <!-- PTR -->
+    <string name="cube_ptr_pull_down_to_refresh">下拉刷新</string>
+    <string name="cube_ptr_release_to_refresh">释放刷新</string>
+    <string name="cube_ptr_refreshing">加载中</string>
+    <string name="cube_ptr_refresh_complete">加载完成</string>
+
+    <string name="cube_ptr_last_update">上次更新:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;秒之前</string>
+    <string name="cube_ptr_minutes_ago">&#160;分钟之前</string>
+    <string name="cube_ptr_hours_ago">&#160;小时之前</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_task">任务</string>
+    <string name="label_message">消息</string>
+    <string name="label_room">房间</string>
+    <string name="out_of_duty">下班</string>
+    <string name="on_duty">值班中</string>
+    <string name="title_activity_login">智趣游戏厅</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_main_game">MainGameActivity</string>
+</resources>
