@@ -91,6 +91,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
             public void onFailure(String error, String message) {
                 super.onFailure(error, message);
                 ProgressDialog.disMiss();
+                AppContext.toast("网络连接失败");
+                startActivity(new Intent(getApplicationContext(),MainGameActivity.class));
             }
 
             @Override

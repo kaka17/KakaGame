@@ -13,6 +13,7 @@
         >
 
         <TextView
+            android:id="@+id/tvUrseInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="个人中心"
@@ -24,6 +25,7 @@
             android:background="@drawable/regist"
             />
         <TextView
+            android:id="@+id/tvGameInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="游戏规则"

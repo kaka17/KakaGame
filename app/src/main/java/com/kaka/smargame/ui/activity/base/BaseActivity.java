@@ -57,6 +57,12 @@ public class BaseActivity extends AppCompatActivity {
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setStatusBarTintResource(R.color.LoginBG);
+
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);//隐藏标题
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
+
+
         mContext = this;
         mInflater = getLayoutInflater();
         mDataCache = DataCache.get(this);
