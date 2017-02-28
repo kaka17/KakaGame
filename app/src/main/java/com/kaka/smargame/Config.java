@@ -49,6 +49,12 @@ public class Config {
     public static String SHARE_USERPWD = "SHARE_PASSWORD";
     public static String SHARE_USERSESSIONID = "SHARE_SESSIONID";
 
+    public static String code="code";
+    public static String msg="msg";
+    public static String accountId="accountId";
+    public static String accountName="accountName";
+    public static String userPass="userPass";
+
 
 
 

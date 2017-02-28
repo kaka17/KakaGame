@@ -10,7 +10,7 @@
         android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="500dp"
-        android:layout_height="300dp"
+        android:layout_height="280dp"
         android:layout_centerInParent="true"
         android:orientation="vertical"
         android:background="@color/registbg"
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="16dp"
+        android:visibility="gone"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +45,34 @@
             android:background="@drawable/etbgbyarc"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="设置昵称:"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                />
+            <EditText
+                android:id="@+id/etNickName"
+                android:hint="昵称"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/etTextColor"
+                android:paddingLeft="6dp"
+                android:layout_width="260dp"
+                android:layout_height="34dp"
+                android:background="@drawable/etbgbyarc"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,34 +129,7 @@
             android:background="@drawable/etbgbyarc"
             android:layout_gravity="center_vertical" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="设置昵称:"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_marginLeft="16dp"
-            android:layout_gravity="center"
-            android:textSize="16sp"
-            />
-    <EditText
-        android:id="@+id/etNickName"
-        android:hint="昵称"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="6dp"
-        android:textColor="@color/etTextColor"
-        android:paddingLeft="6dp"
-        android:layout_width="260dp"
-        android:layout_height="34dp"
-        android:background="@drawable/etbgbyarc"
-        android:layout_gravity="center_vertical" />
-        </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

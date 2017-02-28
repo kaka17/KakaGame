@@ -19,8 +19,8 @@ public class ResponseBean extends JSONObject implements Serializable {
     private final static String ID = "id";
     private final static String ERROR = "error";
     private final static String CODE = "code";
-    private final static String MESSAGE = "message";
-    private final static String RESULT = "result";
+    private final static String MESSAGE = "msg";
+    private final static String RESULT = "data";
     private final static String JSON_RPC = "jsonrpc";
 
     public ResponseBean() {
