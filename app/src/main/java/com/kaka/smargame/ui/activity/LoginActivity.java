@@ -19,6 +19,7 @@ import com.kaka.smargame.api.base.HttpClient;
 import com.kaka.smargame.api.base.ResponseBean;
 import com.kaka.smargame.ui.MainActivity;
 import com.kaka.smargame.ui.activity.base.BaseActivity;
+import com.kaka.smargame.widget.dialog.ProgressDialog;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -81,8 +82,20 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     private void login(String ureName,String pwd){
         HttpClient.instance().login02(ureName, pwd, new HttpCallBack() {
             @Override
-            public void onSuccess(ResponseBean responseBean) {
+            public void onStart() {
+                super.onStart();
+                ProgressDialog.show(LoginActivity.this,"正在登录...");
+            }
 
+            @Override
+            public void onFailure(String error, String message) {
+                super.onFailure(error, message);
+                ProgressDialog.disMiss();
+            }
+
+            @Override
+            public void onSuccess(ResponseBean responseBean) {
+                ProgressDialog.disMiss();
                 try {
                     JSONObject object=new JSONObject(responseBean.toString());
                     if (object.getString(Config.code).equals("0000")){
