@@ -36,7 +36,7 @@ public class MyInfoActivity extends BaseActivity implements View.OnClickListener
     private void initView(){
         ivIcon = (ImageView) findViewById(R.id.ivIcon);
         tvGameInfo = (TextView) findViewById(R.id.tvGameInfo);
-
+        //Œ“  «  studio
     }
 
 
