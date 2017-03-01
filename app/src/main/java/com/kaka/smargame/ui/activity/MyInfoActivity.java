@@ -21,6 +21,7 @@ public class MyInfoActivity extends BaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_my_info);
         initView();
+        setOnClickListener();
     }
 
     @Override
@@ -39,6 +40,11 @@ public class MyInfoActivity extends BaseActivity implements View.OnClickListener
 
     }
 
+    private void setOnClickListener(){
+        ivIcon.setOnClickListener(this);
+        tvGameInfo.setOnClickListener(this);
+    }
+
 
     @Override
     public void onClick(View v) {
@@ -47,7 +53,7 @@ public class MyInfoActivity extends BaseActivity implements View.OnClickListener
 
                 break;
              case R.id.tvGameInfo:
-
+                    finish();
                 break;
 
         }

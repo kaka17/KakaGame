@@ -98,12 +98,14 @@
         android:layout_height="wrap_content">
 
        <CheckBox
+           android:id="@+id/cbIsTrue"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="显示密码"
            android:layout_centerInParent="true"
            android:textColor="@color/white"
            android:textSize="16sp"
+           android:checked="true"
            />
 
         <Button
