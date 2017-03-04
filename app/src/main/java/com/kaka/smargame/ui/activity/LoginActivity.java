@@ -66,9 +66,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         cbIsTrue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
+                if (isChecked) {
                     etPwd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-                }else {
+                } else {
                     etPwd.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
             }
@@ -137,6 +137,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
 //        }
 
         super.onResume();
+        if (AppContext.getProperty(Config.accountId)!=null){
+            etName.setText(AppContext.getProperty(Config.accountId));
+        }
+        if (AppContext.getProperty(Config.userPass)!=null){
+            etPwd.setText(AppContext.getProperty(Config.userPass));
+        }
+
 
     }
 }

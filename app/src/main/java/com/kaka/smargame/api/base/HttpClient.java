@@ -21,8 +21,8 @@ import java.util.List;
 import java.util.Map;
 
 public class HttpClient extends BaseHttpClient {
-    public static final String BASEPATH = "http://192.168.1.105:9000/"; //测试服务器
-    // public static final String BASEPATH = "http://192.168.1.120/smartlock/server.php";//huangrenxin
+//    public static final String BASEPATH = "http://192.168.1.105:9000/"; //测试服务器
+     public static final String BASEPATH = "http://1x6703n563.imwork.net/";//huangrenxin
     // public static final String BASEPATH = "http://192.168.1.113/smartlock/server.php";//zhangxiwang
     // public static final String BASEPATH = "http://192.168.1.117/test.ashx";
     //   public static final String BASEPATH = "https://www.demo.com";

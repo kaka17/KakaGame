@@ -1,5 +1,6 @@
 package com.kaka.smargame.ui.activity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -109,6 +110,7 @@ public class RegistActivity extends BaseActivity implements View.OnClickListener
                     AppContext.setProperty(Config.accountId,data.getAccountId());
                     AppContext.setProperty(Config.accountName,data.getAccountName());
                     AppContext.setProperty(Config.userPass,data.getUserPass());
+                    startActivity(new Intent(getApplicationContext(),MainGameActivity.class));
                     Log.e("TAAAG", data.toString());
                 }else {
                     AppContext.toast(responseBean.toString());
