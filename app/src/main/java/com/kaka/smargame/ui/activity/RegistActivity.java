@@ -95,7 +95,7 @@ public class RegistActivity extends BaseActivity implements View.OnClickListener
         }
 
     }
-    private void initRegist(String nickName,String pwd){
+    private void  initRegist(String nickName,String pwd){
         HttpClient.instance().regist(nickName, pwd, new HttpCallBack() {
             @Override
             public void onSuccess(ResponseBean responseBean) {

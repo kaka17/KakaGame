@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -29,6 +32,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     private EditText etName,etPwd;
     private Button btLogin;
     private TextView tvRegist;
+    private CheckBox cbIsTrue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +58,21 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
         etPwd = (EditText) findViewById(R.id.etPwd);
         btLogin = (Button) findViewById(R.id.btLogin);
         tvRegist = (TextView) findViewById(R.id.tvRegist);
+        cbIsTrue = (CheckBox) findViewById(R.id.cbIsTrue);
     }
     private void setOnClistener(){
         btLogin.setOnClickListener(this);
         tvRegist.setOnClickListener(this);
+        cbIsTrue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    etPwd.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }else {
+                    etPwd.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+            }
+        });
     }
 
     @Override
