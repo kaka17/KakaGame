@@ -117,6 +117,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
                     JSONObject object=new JSONObject(responseBean.toString());
                     if (object.getString(Config.code).equals("0000")){
                         AppContext.toast(object.getString(Config.msg));
+                        startActivity(new Intent(getApplicationContext(),MainGameActivity.class));
                     }else {
                         AppContext.toast(responseBean.toString());
                     }
