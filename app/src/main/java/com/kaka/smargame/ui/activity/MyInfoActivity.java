@@ -71,6 +71,7 @@ public class MyInfoActivity extends BaseActivity implements View.OnClickListener
                 startActivity(new Intent(getApplicationContext(),BindPhoneActivity.class));
                 break;
             case R.id.tvRecharge:
+                startActivity(new Intent(getApplicationContext(),RechargeActivity.class));
                 break;
             case R.id.tvVault:
                 break;
