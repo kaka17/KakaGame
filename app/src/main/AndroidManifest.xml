@@ -42,6 +42,14 @@
             android:name=".ui.activity.MyInfoActivity"
             android:label="@string/title_activity_my_info" >
         </activity>
+        <activity
+            android:name=".ui.activity.BindPhoneActivity"
+            android:label="@string/title_activity_bind_phone" >
+        </activity>
+        <activity
+            android:name=".ui.activity.RechargeActivity"
+            android:label="@string/title_activity_recharge" >
+        </activity>
     </application>
 
 </manifest>

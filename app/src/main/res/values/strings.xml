@@ -53,4 +53,6 @@
     <string name="title_activity_regist">RegistActivity</string>
     <string name="title_activity_main_game">MainGameActivity</string>
     <string name="title_activity_my_info">MyInfoActivity</string>
+    <string name="title_activity_bind_phone">BindPhoneActivity</string>
+    <string name="title_activity_recharge">RechargeActivity</string>
 </resources>

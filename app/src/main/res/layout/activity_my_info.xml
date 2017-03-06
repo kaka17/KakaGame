@@ -22,7 +22,7 @@
             android:layout_marginLeft="6dp"
             android:padding="6dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/game02"
+            android:background="@drawable/longbuttonbg"
             android:layout_alignParentRight="true"
             android:layout_marginRight="16dp"
             />
@@ -108,6 +108,7 @@
                     android:textColor="@color/white"
                     />
                 <TextView
+                    android:id="@+id/tvBindPhone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="去绑定"
@@ -115,10 +116,11 @@
                     android:textSize="12sp"
                    android:paddingLeft="6dp"
                     android:paddingRight="6dp"
-                    android:paddingTop="2dp"
-                    android:paddingBottom="2dp"
-                    android:background="@drawable/myrecharge"
-                    android:textColor="@color/black"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+
+                    android:background="@drawable/longbuttonbg"
+                    android:textColor="@color/white"
                     />
             </LinearLayout>
             <LinearLayout
@@ -199,11 +201,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="充值"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_alignParentBottom="true"
-
                     android:textSize="14sp"
-                    android:padding="10dp"
+                    android:padding="8dp"
                     android:textColor="@color/black"
                     android:background="@drawable/myrecharge"
                     />
@@ -216,7 +217,7 @@
                     android:layout_toRightOf="@+id/tvRecharge"
                     android:layout_alignParentBottom="true"
                     android:textSize="14sp"
-                    android:padding="10dp"
+                    android:padding="8dp"
                     android:textColor="@color/black"
                     android:background="@drawable/myrecharge"
                     />
@@ -229,7 +230,7 @@
                     android:layout_toRightOf="@+id/tvVault"
                     android:layout_alignParentBottom="true"
                     android:textSize="14sp"
-                    android:padding="10dp"
+                    android:padding="8dp"
                     android:textColor="@color/black"
                     android:background="@drawable/myrecharge"
                     />
@@ -242,7 +243,7 @@
                 android:layout_toRightOf="@+id/tvSet"
                 android:layout_alignParentBottom="true"
                 android:textSize="14sp"
-                android:padding="10dp"
+                android:padding="8dp"
                 android:textColor="@color/black"
                 android:background="@drawable/myrecharge"
                 />
